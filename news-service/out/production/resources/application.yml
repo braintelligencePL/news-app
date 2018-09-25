@@ -1,0 +1,8 @@
+spring:
+  profiles: test
+
+---
+spring:
+  profiles: prod
+
+clientUri: asdf
