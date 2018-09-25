@@ -1,9 +1,9 @@
-package task
+package pl.braintelligence.requirement.task.news
 
 import pl.braintelligence.requirement.task.base.BaseIntegrationSpec
-import pl.braintelligence.requirement.task.base.OperatingOnEndpoint
+import pl.braintelligence.requirement.task.news.base.OperatingOnEndpoint
 
-class ProjectAcceptanceSpec extends BaseIntegrationSpec implements OperatingOnEndpoint {
+class NewsAcceptanceSpec extends BaseIntegrationSpec implements OperatingOnEndpoint {
 
     def "Project"() {
         given:

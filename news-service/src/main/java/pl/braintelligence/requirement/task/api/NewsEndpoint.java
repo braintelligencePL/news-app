@@ -1,7 +1,5 @@
 package pl.braintelligence.requirement.task.api;
 
-import static org.springframework.http.HttpStatus.OK;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

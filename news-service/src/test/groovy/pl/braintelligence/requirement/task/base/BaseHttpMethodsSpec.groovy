@@ -1,4 +1,4 @@
-package task.base
+package pl.braintelligence.requirement.task.base
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.web.client.TestRestTemplate

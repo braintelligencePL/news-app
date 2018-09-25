@@ -1,4 +1,4 @@
-package task.base
+package pl.braintelligence.requirement.task.base
 
 import com.github.tomakehurst.wiremock.junit.WireMockRule
 import org.junit.Rule
