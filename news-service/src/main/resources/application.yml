@@ -1,11 +1,20 @@
 spring:
   profiles: test
 
+application:
+  connectTimeout: 5000
+  readTimeout: 5000
+
 ---
+
 spring:
   profiles: prod
 
+application:
+  connectTimeout: 500
+  readTimeout: 500
+
 news-service:
   uri: https://newsapi.org/v2/sources
-
+  api-key: HERE_GOES_YOUR_API_KEY
 
