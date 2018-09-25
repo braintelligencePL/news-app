@@ -21,6 +21,6 @@ public class Application implements CommandLineRunner {
     }
 
     public void run(String... args) {
-        System.out.println("URI: " + newsClient.getClientUri());
+        System.out.println("URI: " + newsClient.getUri());
     }
 }

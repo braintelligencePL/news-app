@@ -5,4 +5,7 @@ spring:
 spring:
   profiles: prod
 
-clientUri: test
+news-service:
+  uri: https://newsapi.org/v2/sources
+
+

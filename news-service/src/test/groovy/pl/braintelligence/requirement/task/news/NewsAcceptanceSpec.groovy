@@ -6,5 +6,6 @@ import pl.braintelligence.requirement.task.news.base.OperatingOnEndpoint
 class NewsAcceptanceSpec extends BaseIntegrationSpec implements OperatingOnEndpoint {
 
     def "Project"() {
+
     }
 }
