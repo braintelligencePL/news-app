@@ -17,6 +17,8 @@ public class NewsService {
     }
 
     public ResponseEntity<NewsDto> getNews(String country, String category) {
-        return ResponseEntity.ok().body(DtoMapper.mapToNewsDto(newsClient.getNews(country, category)));
+        return ResponseEntity.ok().body(
+                DtoMapper.mapToNewsDto(newsClient.getNews(country, category))
+        );
     }
 }
