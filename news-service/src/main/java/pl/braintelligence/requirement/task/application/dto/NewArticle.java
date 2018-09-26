@@ -1,6 +1,6 @@
 package pl.braintelligence.requirement.task.application.dto;
 
-public class NewArticles {
+public class NewArticle {
 
     private String author;
     private String title;

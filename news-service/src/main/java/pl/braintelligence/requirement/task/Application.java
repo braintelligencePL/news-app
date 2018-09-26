@@ -2,10 +2,8 @@ package pl.braintelligence.requirement.task;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import pl.braintelligence.requirement.task.infrastructure.NewsClient;
 
@@ -25,7 +23,5 @@ public class Application implements CommandLineRunner {
     }
 
     public void run(String... args) {
-        System.out.println("URI: " + newsClient.getUri());
-        System.out.println("KEY: " + newsClient.getApiKey());
     }
 }

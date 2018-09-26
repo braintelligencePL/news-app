@@ -6,7 +6,7 @@ public class NewsDto {
 
     private String country;
     private String category;
-    private List<NewArticles> articles;
+    private List<NewArticle> articles;
 
     public String getCountry() {
         return country;
@@ -24,11 +24,11 @@ public class NewsDto {
         this.category = category;
     }
 
-    public List<NewArticles> getArticles() {
+    public List<NewArticle> getArticles() {
         return articles;
     }
 
-    public void setArticles(List<NewArticles> articles) {
+    public void setArticles(List<NewArticle> articles) {
         this.articles = articles;
     }
 }

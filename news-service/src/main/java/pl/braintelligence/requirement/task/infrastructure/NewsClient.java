@@ -4,11 +4,21 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.util.UriComponentsBuilder;
+
+import java.net.URI;
+import java.util.logging.Logger;
+
+import pl.braintelligence.requirement.task.application.dto.NewsSource;
 
 @Configuration
 @EnableConfigurationProperties
 @ConfigurationProperties
 public class NewsClient {
+
+    private static final Logger LOGGER = Logger.getLogger(NewsClient.class.getName());
 
     @Value("${news-service.uri}")
     private String uri;
@@ -16,19 +26,23 @@ public class NewsClient {
     @Value("${news-service.api-key}")
     private String apiKey;
 
-    public String getUri() {
-        return uri;
+    private final RestTemplate restTemplate;
+
+    public NewsClient(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
     }
 
-    public void setUri(String uri) {
-        this.uri = uri;
+    public ResponseEntity<NewsSource> getSources() {
+        LOGGER.info("Getting sources from NewsAPI");
+        URI targetUrl = UriComponentsBuilder.fromUriString(uri)
+                .queryParam("apiKey", apiKey)
+                .queryParam("category", "technology")
+                .build().toUri();
+        System.out.println(restTemplate.getForEntity(targetUrl, NewsSource.class).getBody());
+
+        return restTemplate.getForEntity(targetUrl, NewsSource.class);
     }
 
-    public String getApiKey() {
-        return apiKey;
-    }
+    public ResponseEntity<>
 
-    public void setApiKey(String apiKey) {
-        this.apiKey = apiKey;
-    }
 }

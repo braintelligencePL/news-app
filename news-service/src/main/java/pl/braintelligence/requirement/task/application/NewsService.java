@@ -1,17 +1,22 @@
 package pl.braintelligence.requirement.task.application;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
-import java.util.List;
-
-import pl.braintelligence.requirement.task.application.dto.NewsDto;
+import pl.braintelligence.requirement.task.application.dto.NewsSource;
+import pl.braintelligence.requirement.task.infrastructure.NewsClient;
 
 @Service
 public class NewsService {
 
-    public List<NewsDto> getNews(String country, String category) {
-        return Collections.emptyList();
+    private final NewsClient newsClient;
+
+    public NewsService(NewsClient newsClient) {
+        this.newsClient = newsClient;
+    }
+
+    public ResponseEntity<NewsSource> getNews(String country, String category) {
+        return newsClient.getSources();
     }
 
 }
