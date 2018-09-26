@@ -3,8 +3,9 @@ package pl.braintelligence.requirement.task.application;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import pl.braintelligence.requirement.task.domain.news.News;
-import pl.braintelligence.requirement.task.infrastructure.NewsClient;
+import pl.braintelligence.requirement.task.application.dto.NewsDto;
+import pl.braintelligence.requirement.task.application.utils.DtoMapper;
+import pl.braintelligence.requirement.task.infrastructure.news.NewsClient;
 
 @Service
 public class NewsService {
@@ -15,7 +16,7 @@ public class NewsService {
         this.newsClient = newsClient;
     }
 
-    public ResponseEntity<News> getNews(String country, String category) {
-        return newsClient.getNews(country, category);
+    public ResponseEntity<NewsDto> getNews(String country, String category) {
+        return ResponseEntity.ok().body(DtoMapper.mapToNewsDto(newsClient.getNews(country, category)));
     }
 }

@@ -5,8 +5,8 @@ import pl.braintelligence.requirement.task.base.BaseHttpMethodsSpec
 
 trait OperatingOnEndpoint implements BaseHttpMethodsSpec {
 
-    ResponseEntity createProjectDraft(Object requestBody) {
-        return post('/projects/drafts', requestBody)
+    ResponseEntity getTopHeadlines() {
+        return get("http://localhost:12346/news/pl/technology", Object)
     }
 
 }

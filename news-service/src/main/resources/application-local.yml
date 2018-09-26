@@ -1,0 +1,8 @@
+application:
+  connectTimeout: 50000
+  readTimeout: 50000
+
+news-service:
+  top-headlines: http://localhost:12346
+  api-key: test
+

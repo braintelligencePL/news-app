@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import org.springframework.context.annotation.Configuration;
-import pl.braintelligence.requirement.task.infrastructure.NewsClient;
+import pl.braintelligence.requirement.task.infrastructure.news.NewsClient;
 
 @SpringBootApplication
 @Configuration

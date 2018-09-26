@@ -1,19 +1,7 @@
-spring:
-  profiles: test
-
-application:
-  connectTimeout: 50000
-  readTimeout: 50000
-
----
-
-spring:
-  profiles: prod
-
 application:
   connectTimeout: 50000
   readTimeout: 50000
 
 news-service:
   top-headlines: https://newsapi.org/v2/top-headlines
-  api-key: YOUR_API_KEY
+  api-key: e858eefc5ba54ab78ad5cb53e464b6f9

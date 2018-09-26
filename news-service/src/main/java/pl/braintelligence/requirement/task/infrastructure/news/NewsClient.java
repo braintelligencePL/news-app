@@ -1,4 +1,4 @@
-package pl.braintelligence.requirement.task.infrastructure;
+package pl.braintelligence.requirement.task.infrastructure.news;
 
 import static java.util.Objects.*;
 
@@ -11,13 +11,9 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Logger;
 
 import pl.braintelligence.requirement.task.domain.news.News;
-import pl.braintelligence.requirement.task.application.dto.NewsResponseArticles;
-import pl.braintelligence.requirement.task.application.dto.NewsSource;
 
 @Configuration
 @EnableConfigurationProperties
@@ -27,7 +23,7 @@ public class NewsClient {
     private static final Logger LOGGER = Logger.getLogger(NewsClient.class.getName());
 
     @Value("${news-service.top-headlines}")
-    private String topHeadlines;
+    private String topHeadlinesUri;
 
     @Value("${news-service.api-key}")
     private String apiKey;
@@ -38,21 +34,23 @@ public class NewsClient {
         this.restTemplate = restTemplate;
     }
 
-    public ResponseEntity<News> getNews(String country, String category) {
-
+    public News getNews(String country, String category) {
+        LOGGER.info("Getting top news from NewsAPI");
         News news = new News(country, category);
 
-        URI targetUrl = UriComponentsBuilder.fromUriString(topHeadlines)
+        URI targetUrl = UriComponentsBuilder.fromUriString(topHeadlinesUri)
                 .queryParam("apiKey", apiKey)
                 .queryParam("category", category)
                 .queryParam("country", country)
                 .build().toUri();
 
+        System.out.println(targetUrl);
+
         news.setArticles(
                 requireNonNull(
-                        restTemplate.getForEntity(targetUrl, NewsResponseArticles.class).getBody())
+                        restTemplate.getForEntity(targetUrl, News.class).getBody())
                         .getArticles());
 
-        return ResponseEntity.ok().body(news);
+        return news;
     }
 }
