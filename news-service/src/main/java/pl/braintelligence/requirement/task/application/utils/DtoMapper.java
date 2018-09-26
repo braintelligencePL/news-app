@@ -24,6 +24,7 @@ public class DtoMapper {
         NewsArticle newsArticle = new NewsArticle();
         newsArticle.setAuthor(article.getAuthor());
         newsArticle.setArticleUrl(article.getUrl());
+        newsArticle.setTitle(article.getTitle());
         newsArticle.setDescription(article.getDescription());
         newsArticle.setImageUrl(article.getUrlToImage());
         newsArticle.setSourceName(article.getSource().getName());
