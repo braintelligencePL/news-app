@@ -8,7 +8,7 @@ import static pl.braintelligence.requirement.task.news.base.NewsStubs.*
 class NewsAcceptanceSpec extends BaseIntegrationSpec implements OperatingOnEndpoint {
 
     def "Should get stubbed top-headlines from NewsAPI"() {
-        given: "prepare news api response"
+        given: "prepare stub for endpoint /news/{country}/{category}"
         stubNewsApiResponse()
 
         when: "user asks for top-headlines news articles"

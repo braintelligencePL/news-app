@@ -1,11 +1,13 @@
 package pl.braintelligence.requirement.task.domain.values;
 
+import java.util.Date;
+
 public class Article {
 
     private String author;
     private String title;
     private String description;
-    private String publishedAt;
+    private Date publishedAt;
     private String url;
     private String urlToImage;
     private Source source;
@@ -34,11 +36,11 @@ public class Article {
         this.description = description;
     }
 
-    public String getPublishedAt() {
+    public Date getPublishedAt() {
         return publishedAt;
     }
 
-    public void setPublishedAt(String publishedAt) {
+    public void setPublishedAt(Date publishedAt) {
         this.publishedAt = publishedAt;
     }
 

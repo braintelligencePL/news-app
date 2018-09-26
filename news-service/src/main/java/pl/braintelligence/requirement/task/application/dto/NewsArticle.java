@@ -1,6 +1,6 @@
 package pl.braintelligence.requirement.task.application.dto;
 
-import pl.braintelligence.requirement.task.domain.values.Source;
+import org.springframework.format.annotation.DateTimeFormat;
 
 public class NewsArticle {
 

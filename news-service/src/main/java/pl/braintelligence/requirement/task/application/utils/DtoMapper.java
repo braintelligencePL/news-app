@@ -1,5 +1,6 @@
 package pl.braintelligence.requirement.task.application.utils;
 
+import java.text.SimpleDateFormat;
 import java.util.stream.Collectors;
 
 import pl.braintelligence.requirement.task.application.dto.NewsArticle;
@@ -24,12 +25,12 @@ public class DtoMapper {
         newsArticle.setAuthor(article.getAuthor());
         newsArticle.setArticleUrl(article.getUrl());
         newsArticle.setDescription(article.getDescription());
-        newsArticle.setDate(article.getPublishedAt());
         newsArticle.setImageUrl(article.getUrlToImage());
         newsArticle.setSourceName(article.getSource().getName());
+        newsArticle.setDate(
+                new SimpleDateFormat("yyyy/MM/dd")
+                        .format(article.getPublishedAt()));
         return newsArticle;
     }
 
-    private DtoMapper() {
-    }
 }

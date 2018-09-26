@@ -2,16 +2,17 @@ package pl.braintelligence.requirement.task.infrastructure.news;
 
 import static java.util.Objects.*;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.lang.invoke.MethodHandles;
 import java.net.URI;
-import java.util.logging.Logger;
 
 import pl.braintelligence.requirement.task.domain.news.News;
 
@@ -20,7 +21,7 @@ import pl.braintelligence.requirement.task.domain.news.News;
 @ConfigurationProperties
 public class NewsClient {
 
-    private static final Logger LOGGER = Logger.getLogger(NewsClient.class.getName());
+    private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
     @Value("${news-service.top-headlines}")
     private String topHeadlinesUri;
@@ -34,8 +35,7 @@ public class NewsClient {
         this.restTemplate = restTemplate;
     }
 
-    public News getNews(String country, String category) {
-        LOGGER.info("Getting top news from NewsAPI");
+    public News getTopHeadlines(String country, String category) {
         News news = new News(country, category);
 
         URI targetUrl = UriComponentsBuilder.fromUriString(topHeadlinesUri)
@@ -44,7 +44,7 @@ public class NewsClient {
                 .queryParam("country", country)
                 .build().toUri();
 
-        System.out.println(targetUrl);
+        logger.info("Getting top headlines with url={}", targetUrl, category, country);
 
         news.setArticles(
                 requireNonNull(

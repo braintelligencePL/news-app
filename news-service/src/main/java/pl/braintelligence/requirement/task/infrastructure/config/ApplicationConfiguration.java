@@ -27,6 +27,5 @@ public class ApplicationConfiguration {
                 .setReadTimeout(readTimeout)
                 .build();
     }
-
 }
 

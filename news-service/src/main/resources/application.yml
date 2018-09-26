@@ -4,4 +4,4 @@ application:
 
 news-service:
   top-headlines: https://newsapi.org/v2/top-headlines
-  api-key: HERE_GOES_YOUR_KEY
+  api-key: e858eefc5ba54ab78ad5cb53e464b6f9
