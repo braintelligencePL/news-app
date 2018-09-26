@@ -15,5 +15,5 @@ application:
   readTimeout: 50000
 
 news-service:
-  uri: https://newsapi.org/v2/sources
-  api-key: e858eefc5ba54ab78ad5cb53e464b6f9
+  top-headlines: https://newsapi.org/v2/top-headlines
+  api-key: YOUR_API_KEY

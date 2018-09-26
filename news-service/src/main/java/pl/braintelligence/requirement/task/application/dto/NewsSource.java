@@ -1,12 +1,13 @@
 package pl.braintelligence.requirement.task.application.dto;
 
-import java.util.ArrayList;
 import java.util.List;
+
+import pl.braintelligence.requirement.task.domain.values.Source;
 
 public class NewsSource {
 
     private String status;
-    List<Source> sources;
+    private List<Source> sources;
 
     public List<Source> getSources() {
         return sources;
@@ -23,4 +24,6 @@ public class NewsSource {
     public void setStatus(String status) {
         this.status = status;
     }
+
 }
+

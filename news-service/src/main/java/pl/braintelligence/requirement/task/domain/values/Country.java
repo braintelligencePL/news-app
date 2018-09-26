@@ -55,5 +55,10 @@ public enum Country {
     UA,
     US,
     VE,
-    ZA
+    ZA,
+    INVALID;
+
+    public boolean isInvalid() {
+        return this == INVALID;
+    }
 }

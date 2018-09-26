@@ -1,5 +1,7 @@
 package pl.braintelligence.requirement.task.infrastructure;
 
+import static java.util.Objects.*;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -9,8 +11,12 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Logger;
 
+import pl.braintelligence.requirement.task.domain.news.News;
+import pl.braintelligence.requirement.task.application.dto.NewsResponseArticles;
 import pl.braintelligence.requirement.task.application.dto.NewsSource;
 
 @Configuration
@@ -20,8 +26,8 @@ public class NewsClient {
 
     private static final Logger LOGGER = Logger.getLogger(NewsClient.class.getName());
 
-    @Value("${news-service.uri}")
-    private String uri;
+    @Value("${news-service.top-headlines}")
+    private String topHeadlines;
 
     @Value("${news-service.api-key}")
     private String apiKey;
@@ -32,17 +38,21 @@ public class NewsClient {
         this.restTemplate = restTemplate;
     }
 
-    public ResponseEntity<NewsSource> getSources() {
-        LOGGER.info("Getting sources from NewsAPI");
-        URI targetUrl = UriComponentsBuilder.fromUriString(uri)
+    public ResponseEntity<News> getNews(String country, String category) {
+
+        News news = new News(country, category);
+
+        URI targetUrl = UriComponentsBuilder.fromUriString(topHeadlines)
                 .queryParam("apiKey", apiKey)
-                .queryParam("category", "technology")
+                .queryParam("category", category)
+                .queryParam("country", country)
                 .build().toUri();
-        System.out.println(restTemplate.getForEntity(targetUrl, NewsSource.class).getBody());
 
-        return restTemplate.getForEntity(targetUrl, NewsSource.class);
+        news.setArticles(
+                requireNonNull(
+                        restTemplate.getForEntity(targetUrl, NewsResponseArticles.class).getBody())
+                        .getArticles());
+
+        return ResponseEntity.ok().body(news);
     }
-
-    public ResponseEntity<>
-
 }

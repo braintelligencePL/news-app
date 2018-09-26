@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import pl.braintelligence.requirement.task.application.NewsService;
-import pl.braintelligence.requirement.task.application.dto.NewsSource;
+import pl.braintelligence.requirement.task.domain.news.News;
 
 @Controller
 @RequestMapping("/news")
@@ -23,7 +23,7 @@ public class NewsEndpoint {
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/{country}/{category}")
-    public ResponseEntity<NewsSource> getProjects(@PathVariable String country, @PathVariable String category) {
+    public ResponseEntity<News> getProjects(@PathVariable String country, @PathVariable String category) {
         return newsService.getNews(country, category);
     }
 }
