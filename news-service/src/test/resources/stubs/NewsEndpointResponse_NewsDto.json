@@ -2,185 +2,185 @@
   "country": "pl",
   "category": "technology",
   "articles": [
-  {
-    "author": null,
-    "title": null,
-    "description": null,
-    "date": "2018-09-26T11:28:49Z",
-    "sourceName": "Tabletowo.pl",
-    "articleUrl": "https://www.tabletowo.pl/2018/09/26/google-widzet-wyszukiwania-personalizacja/",
-    "imageUrl": null
-  },
-  {
-    "author": "Aquma",
-    "title": null,
-    "description": "Deweloperzy ze studia Codemasters Software zapowiedzieli DiRT Rally 2.0 – kontynuację świetnie przyjętej gry wyścigowej z 2015 roku. Produkcja pozwoli wziąć udział w rajdzie Polski.",
-    "date": "2018-09-26T11:19:44Z",
-    "sourceName": "Gry-online.pl",
-    "articleUrl": "https://www.gry-online.pl/S013.asp?ID=111292",
-    "imageUrl": "https://www.gry-online.pl/i/w/h3/720_275664346.jpg"
-  },
-  {
-    "author": null,
-    "title": null,
-    "description": "Obie gry zostaną delikatnie odświeżone i będą sprzedawane w pakiecie.",
-    "date": "2018-09-26T10:14:43Z",
-    "sourceName": "Cdaction.pl",
-    "articleUrl": "https://www.cdaction.pl/news-54675/castlevania-symphony-of-the-night-oraz-rondo-of-blood-wybieraja-sie-na-ps4-wideo.html",
-    "imageUrl": null
-  },
-  {
-    "author": "AlexB",
-    "title": null,
-    "description": "Były pracownik studia Telltale opublikował alternatywne zakończenie pierwszego sezonu The Walking Dead, które zostało zrobione z nudów w oczekiwaniu na premierę ostatniego epizodu. Ma ono charakter mocno humorystyczny.",
-    "date": "2018-09-26T10:09:04Z",
-    "sourceName": "Gry-online.pl",
-    "articleUrl": "https://www.gry-online.pl/S013.asp?ID=111288",
-    "imageUrl": "https://www.gry-online.pl/i/w/h3/720_275660271.jpg"
-  },
-  {
-    "author": "Piotr Bicki",
-    "title": null,
-    "description": "Firma Razer stworzy specjalny sprzęt.",
-    "date": "2018-09-26T10:02:00Z",
-    "sourceName": "Eurogamer.pl",
-    "articleUrl": "https://www.eurogamer.pl/articles/2018-09-26-xbox-one-wzbogaci-sie-o-obsluge-myszy-i-klawiatury-w-grach",
-    "imageUrl": "https://cdn.gamer-network.net/2018/articles/2018-09-26-10-48/-1537955298175.jpg/EG11/thumbnail/1920x1080/format/jpg/1998560.jpg"
-  },
-  {
-    "author": null,
-    "title": null,
-    "description": null,
-    "date": "2018-09-26T09:57:36Z",
-    "sourceName": "Tech.wp.pl",
-    "articleUrl": "https://tech.wp.pl/lazik-opportunity-nadal-nie-odpowiada-nie-ma-pewnosci-dlaczego-6299466178619009a",
-    "imageUrl": null
-  },
-  {
-    "author": "ElMundo",
-    "title": null,
-    "description": "Podobnie jak w przypadku GeForce GTX 1070, także i jego bezpośredni następca – RTX 2070 – powinien cieszyć się największym zainteresowaniem ze strony graczy. Tym bardziej warto zwrócić uwagę na to, co zaoferuje i kiedy pojawi się ten premierowy układ Nvidii.",
-    "date": "2018-09-26T09:53:25Z",
-    "sourceName": "Gry-online.pl",
-    "articleUrl": "https://www.gry-online.pl/S013.asp?ID=111287",
-    "imageUrl": "https://www.gry-online.pl/i/w/h3/720_275660082.jpg"
-  },
-  {
-    "author": "Adrian Werner",
-    "title": null,
-    "description": "Studio Valve ujawniło dane dotyczące wykorzystania padów przez użytkowników Steam. Silna pozycja kontrolerów do Xboksa 360 i Xboksa One nikogo nie zaszokuje, ale zaskakująco dobrze poradził sobie pad Switch Pro.",
-    "date": "2018-09-26T09:27:41Z",
-    "sourceName": "Gry-online.pl",
-    "articleUrl": "https://www.gry-online.pl/S013.asp?ID=111286",
-    "imageUrl": "https://www.gry-online.pl/i/h/17/606138078.jpg"
-  },
-  {
-    "author": null,
-    "title": null,
-    "description": "Google posłuchał krytyków. Logowanie do przeglądarki Chrome nie będzie już obowiązkowe, a synchronizacja danych pozostanie niestety nieprzejrzysta.",
-    "date": "2018-09-26T09:04:13Z",
-    "sourceName": "Spidersweb.pl",
-    "articleUrl": "https://www.spidersweb.pl/2018/09/logowanie-do-chrome-69-google-sie-wycofuje.html",
-    "imageUrl": "https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2018/09/automatyczne-logowanie-do-chrome-google-zmienia-zdanie.jpg"
-  },
-  {
-    "author": null,
-    "title": null,
-    "description": null,
-    "date": "2018-09-26T08:28:09Z",
-    "sourceName": "Tabletowo.pl",
-    "articleUrl": "https://www.tabletowo.pl/2018/09/26/iphone-xs-max-podzespoly-cena/",
-    "imageUrl": null
-  },
-  {
-    "author": "mGSM.pl / PIK Sp. z o.o.",
-    "title": null,
-    "description": "Samsung Galaxy P30 zabłysnął wczoraj na",
-    "date": "2018-09-26T08:14:17Z",
-    "sourceName": "Mgsm.pl",
-    "articleUrl": "http://www.mgsm.pl/pl/aktualnosci/9904/",
-    "imageUrl": "http://files.mgsm.pl//news/9904/opak1-35853-large.jpg"
-  },
-  {
-    "author": null,
-    "title": null,
-    "description": null,
-    "date": "2018-09-26T08:02:47Z",
-    "sourceName": "Pcworld.pl",
-    "articleUrl": "https://www.pcworld.pl/news/Ktos-przechwycil-twoje-dane-logowania-Firefox-Monitor-to-sprawdzi-Nowa-usluga-Mozilli,410954.html",
-    "imageUrl": null
-  },
-  {
-    "author": null,
-    "title": null,
-    "description": "Nintendo Switch Online działa już od ubiegłego tygodnia, ale Nintendo nadal musi tłumaczyć się ze swoich niektórych decyzji. Firma nie usunie naszych save'ów następnego dnia po wygaśnięciu...",
-    "date": "2018-09-26T06:58:00Z",
-    "sourceName": "Www.ppe.pl",
-    "articleUrl": "https://www.ppe.pl/news/125655/nintendo-nie-usunie-stanow-rozgrywki-nastepnego-dnia-po-wygasnieciu-nintendo-switch-online.html",
-    "imageUrl": "https://www.ppe.pl/upload/news/97/23/9/small_972309900.jpg"
-  },
-  {
-    "author": "Aquma",
-    "title": null,
-    "description": "Casey Hudson ze studia BioWare przekazał, że Anthem – kooperacyjna strzelanka w klimatach science fiction – wchodzi w fazę testów alfa. Wszystkie najważniejsze elementy gry są już sprawne.",
-    "date": "2018-09-26T06:50:41Z",
-    "sourceName": "Gry-online.pl",
-    "articleUrl": "https://www.gry-online.pl/S013.asp?ID=111279",
-    "imageUrl": "https://www.gry-online.pl/i/h/17/592018593.jpg"
-  },
-  {
-    "author": "Przemysław Wańtuchowicz",
-    "title": null,
-    "description": "Overcooked i Victor Vran.",
-    "date": "2018-09-26T06:35:00Z",
-    "sourceName": "Eurogamer.pl",
-    "articleUrl": "https://www.eurogamer.pl/articles/2018-09-26-games-with-gold-pazdziernik-2018-pelna-oferta",
-    "imageUrl": "https://cdn.gamer-network.net/2018/articles/2018-09-26-07-31/games-with-gold-padziernik-2018-pelna-oferta-1537943472181.jpg/EG11/thumbnail/1920x1080/format/jpg/1998486.jpg"
-  },
-  {
-    "author": "Mateusz Budzeń",
-    "title": null,
-    "description": "Aktualizacje Windowsa z pewnością potrafią być irytujące. Zwłaszcza, że większe paczki wymagają ponownego uruchomienia komputera. Jeśli zdarzy się to w domu,…",
-    "date": "2018-09-25T21:00:43Z",
-    "sourceName": "Dobreprogramy.pl",
-    "articleUrl": "https://www.dobreprogramy.pl/Aktualizacja-Windowsa-10-zrestartowala-komputer-gdy-pacjent-byl-pod-narkoza,News,91118.html",
-    "imageUrl": "https://gallery.dpcdn.pl/imgd/News/85011/g_-_960x640_-_s_x46127db2-f154-49aa-ae30-ee37bcdc6596.jpg"
-  },
-  {
-    "author": null,
-    "title": null,
-    "description": null,
-    "date": "2018-09-25T18:35:34Z",
-    "sourceName": "Tabletowo.pl",
-    "articleUrl": "https://www.tabletowo.pl/2018/09/25/opaska-fitness-bakeey-m3c-plus-specyfikacja-cena-gdzie-kupic-ile-kosztuje/",
-    "imageUrl": null
-  },
-  {
-    "author": "Bart�omiej Pawlak",
-    "title": null,
-    "description": "Wyciek�y oficjalne grafiki przestawiaj�ce nadchodz�cy flagowy smartfon Huawei - Mate 20 Pro. Przy okazji potwierdzi�y si� najbardziej wyczekiwana nowo�� - potr�jny aparat. Prawdopodobnie pojawi si� te� czytnik linii papilarnych zatopiony pod ekranem.",
-    "date": "2018-09-25T15:31:00Z",
-    "sourceName": "Gazeta.pl",
-    "articleUrl": "http://next.gazeta.pl/next/7,151243,23966014,wyciekly-grafiki-huawei-mate-20-pro-potwierdzily-sie-dwie-najwazniejsze.html",
-    "imageUrl": "http://bi.gazeta.pl/im/15/db/16/z23966997IER,Huawei-Mate-20-Pro-na-grafikach.jpg"
-  },
-  {
-    "author": "Wiadomości Onet",
-    "title": null,
-    "description": "",
-    "date": "2018-09-25T14:34:47Z",
-    "sourceName": "Onet.pl",
-    "articleUrl": "https://wiadomosci.onet.pl/swiat/laziki-z-sondy-hayabusa2-wyslaly-zdjecia-z-asteroidy/f3rmfd3",
-    "imageUrl": "https://ocdn.eu/pulscms-transforms/1/fc4ktkpTURBXy81NDFmZTY0M2Q1Yjk3ZDQ2MGNmZmFmOThkNjA1NDc0Zi5qcGeSlQMAJM0CgM0BaJMFzQHgzQFo"
-  },
-  {
-    "author": "Dariusz DM Matusiak",
-    "title": null,
-    "description": "Forza Horizon 4 zmienia się w pełnoprawne, samochodowe MMO. To bardzo dobra gra, która błyszczy na tle konkurentów, a zawiedzie odrobinę jedynie weteranów serii.",
-    "date": "2018-09-25T07:49:22Z",
-    "sourceName": "Gry-online.pl",
-    "articleUrl": "https://www.gry-online.pl/S020.asp?ID=12972",
-    "imageUrl": "https://www.gry-online.pl/i/h/4/506582734.jpg"
-  }
-]
+    {
+      "author": "http://facebook.com/pgkrzywy",
+      "title": "Nintendo zrozumiało swój błąd. Zapis gry w chmurze nie zniknie od razu po wygaśnięciu abonamentu",
+      "description": "Nintendo zdecydowało się na zmianę zasad przechowywania save’ów gier z konsoli Switch w chmurze. To świetna wiadomość dla abonentów Nintendo Switch Online.",
+      "date": "2018/09/26",
+      "sourceName": "Spidersweb.pl",
+      "articleUrl": "https://www.spidersweb.pl/2018/09/nintendo-switch-online-save.html",
+      "imageUrl": "https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2017/10/Nintendo-Switch.jpg"
+    },
+    {
+      "author": null,
+      "title": "QRecorder: Sprawdź, dlaczego ta aplikacja jest niebezpieczna!",
+      "description": "Na użytkowników smartfonów co chwilę czyhają niebezpieczeństwa. Wyłudzające pieniądze SMS-y premium, zawirusowane przez hackerów aplikacje czy zwyczajne uszkodzenia mechaniczne. Ostatnio głośno zrobiło się na temat jednej z aplikacji,...",
+      "date": "2018/09/26",
+      "sourceName": "Rmfmaxxx.pl",
+      "articleUrl": "https://www.rmfmaxxx.pl/news/QRecorder-Sprawdz-dlaczego-ta-aplikacja-jest-niebezpieczna,42626.html",
+      "imageUrl": "https://www.rmfmaxxx.pl/scratch/staticImages/c9/ac0/c9ac0fa9e8491ccd.jpg"
+    },
+    {
+      "author": "Dawid Długosz",
+      "title": "LG V40 ThinQ - wszystko, co wiemy o nowym smartfonie",
+      "description": "LG V40 ThinQ - wszystko, co wiemy o nowym smartfonie",
+      "date": "2018/09/26",
+      "sourceName": "Komputerswiat.pl",
+      "articleUrl": "https://www.komputerswiat.pl/artykuly/redakcyjne/lg-v40-thinq-wszystko-co-wiemy-o-nowym-smartfonie/0dskh98",
+      "imageUrl": "https://ocdn.eu/pulscms-transforms/1/NRCktkqTURBXy9lNDBjZmFkYWJiMzA3MzhmNTU2MmRiM2ZhMDcyYzY1Ny5qcGVnkpUDGADNAm7NAV6TBc0B4M0BaA"
+    },
+    {
+      "author": "https://www.facebook.com/marcin.polowianiuk",
+      "title": "Jeden powód mniej, by używać launchera. Google wprowadza personalizację widżetu wyszukiwania",
+      "description": "Jeżeli jesteś fanem dostosowywania wyglądu smartfona do siebie, koniecznie sprawdź nowy widżet wyszukiwarki Google.",
+      "date": "2018/09/26",
+      "sourceName": "Spidersweb.pl",
+      "articleUrl": "https://www.spidersweb.pl/2018/09/google-widzet-wyszukiwania.html",
+      "imageUrl": "https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2018/09/widzet-google-wyszukiwanie.jpg"
+    },
+    {
+      "author": "Entelarmer",
+      "title": "Fortnite jednak z funkcją cross-play na PlayStation 4. Sony rozpoczyna testy",
+      "description": "Firma Sony ogłosiła rozpoczęcie testów funkcji cross-play w Fortnite na PlayStation 4. Tym samym japońska spółka wycofuje się z wcześniejszych deklaracji, jakoby nie miała pozwolić na wspólną zabawę z posiadaczami innych konsol.",
+      "date": "2018/09/26",
+      "sourceName": "Gry-online.pl",
+      "articleUrl": "https://www.gry-online.pl/S013.asp?ID=111297",
+      "imageUrl": "https://www.gry-online.pl/i/h/17/12441734.jpg"
+    },
+    {
+      "author": null,
+      "title": "Forza Horizon 4. O włos od doskonałości [RECENZJA]",
+      "description": null,
+      "date": "2018/09/26",
+      "sourceName": "Wyborcza.pl",
+      "articleUrl": "http://wyborcza.pl/7,156282,23969323,forza-horizon-4-o-wlos-od-doskonalosci-recenzja.html",
+      "imageUrl": null
+    },
+    {
+      "author": null,
+      "title": "Pierwszy na świecie wytrzymały smartfon dla graczy, Doogee S70, trafi wkrótce do Polski. Zainteresowani?",
+      "description": null,
+      "date": "2018/09/26",
+      "sourceName": "Tabletowo.pl",
+      "articleUrl": "https://www.tabletowo.pl/2018/09/26/smartfon-doogee-s70-specyfikacja-kiedy-w-polsce-zapowiedz-premiery/",
+      "imageUrl": null
+    },
+    {
+      "author": "Joachim Snoch",
+      "title": "OnePlus 6T - znamy datę premiery",
+      "description": "",
+      "date": "2018/09/26",
+      "sourceName": "Komputerswiat.pl",
+      "articleUrl": "https://www.komputerswiat.pl/aktualnosci/smartfony/oneplus-6t-znamy-date-premiery/8h0xljf",
+      "imageUrl": "https://ocdn.eu/pulscms-transforms/1/GW6ktkpTURBXy8wYTQ1MWM4MDg1YzcyM2ZjZDczYTNhNDZlMmUxMDg4Yi5qcGeSlQMAFM0D1M0CJ5MFzQHgzQFo"
+    },
+    {
+      "author": "Aquma",
+      "title": "Zapowiedziano DiRT Rally 2.0 - będzie rajd Polski",
+      "description": "Deweloperzy ze studia Codemasters Software zapowiedzieli DiRT Rally 2.0 – kontynuację świetnie przyjętej gry wyścigowej z 2015 roku. Produkcja pozwoli wziąć udział m.in. w rajdzie Polski i zadebiutuje na początku przyszłego roku.",
+      "date": "2018/09/26",
+      "sourceName": "Gry-online.pl",
+      "articleUrl": "https://www.gry-online.pl/S013.asp?ID=111292",
+      "imageUrl": "https://www.gry-online.pl/i/w/h3/720_275666673.jpg"
+    },
+    {
+      "author": "Entelarmer",
+      "title": "Jagged Alliance Rage! opóźnione",
+      "description": "Firma THQ Nordic poinformowała o przesunięciu premiery Jagged Alliance: Rage!, która miała zadebiutować jutro na PC. Zamiast tego spin-off taktycznej serii ukaże się na początku grudnia na PC, PlayStation 4 oraz Xboksie One.",
+      "date": "2018/09/26",
+      "sourceName": "Gry-online.pl",
+      "articleUrl": "https://www.gry-online.pl/S013.asp?ID=111295",
+      "imageUrl": "https://www.gry-online.pl/i/h/17/12469250.jpg"
+    },
+    {
+      "author": "",
+      "title": "Valve ujawnia najpopularniejsze kontrolery do gier na Steamie",
+      "description": "Masa ciekawych statystyk. W nowym wpisie na blogu platformy Steam firma Valve podzieliła się informacjami na temat najpopularniejszych kontrolerów do gier używanych przez pecetowych graczy. O ile w żaden sposób nie zaskakuje popularność padów Xboksa, to jest …",
+      "date": "2018/09/26",
+      "sourceName": "Pclab.pl",
+      "articleUrl": "https://pclab.pl/news78895.html",
+      "imageUrl": "https://pclab.pl/index.php?file=process&action=getIcon&id=78895"
+    },
+    {
+      "author": null,
+      "title": "Lepiej późno niż wcale. Myszka i klawiatura docierają na Xboksa One",
+      "description": "Lepiej późno niż wcale. Microsoft udostępni deweloperom możliwość zaimplementowania obsługi tych pecetowych narzędzi w swoich grach.",
+      "date": "2018/09/26",
+      "sourceName": "Spidersweb.pl",
+      "articleUrl": "https://www.spidersweb.pl/2018/09/xbox-one-myszka-i-klawiatura-razer.html",
+      "imageUrl": "https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2018/09/xbox-one-myszka-i-klawiatura.jpg"
+    },
+    {
+      "author": "Bart�omiej Pawlak",
+      "title": "Poważne oskarżenia Qualcomma. Apple miał przekazywać tajemnice Intelowi",
+      "description": "Wojna Qualcomma i Apple trwa ju� od lat, ale tym razem pierwsza z firm rzuca bardzo powa�ne oskar�enia. Jej zdaniem, Apple wykrada� tajemnice handlowe i przekazywa� je Intelowi, \"aby pom�c nadrobi� zaleg�o�ci\".",
+      "date": "2018/09/26",
+      "sourceName": "Gazeta.pl",
+      "articleUrl": "http://next.gazeta.pl/next/7,151243,23969309,qualcomm-oskarza-apple.html",
+      "imageUrl": "http://bi.gazeta.pl/im/7b/db/16/z23969403IER,Apple-Cheaper-iPhones.jpg"
+    },
+    {
+      "author": "Jakub Mirowski",
+      "title": "Ta opowieść dobiegła końca. Gorzki upadek Telltale Games",
+      "description": "Latami ciężko było znaleźć w kalendarzu miesiąc bez premiery epizodu z jakiegoś projektu Telltale Games. Mimo to studio niedawno rozpoczęło wygaszanie działalności. Patrząc na sposób jego funkcjonowania – można się dziwić, że stało się to tak późno.",
+      "date": "2018/09/26",
+      "sourceName": "Gry-online.pl",
+      "articleUrl": "https://www.gry-online.pl/S018.asp?ID=1741",
+      "imageUrl": "https://www.gry-online.pl/i/h/1/2426703.jpg"
+    },
+    {
+      "author": null,
+      "title": "Łazik Opportunity nadal nie odpowiada. Nie ma pewności, dlaczego",
+      "description": null,
+      "date": "2018/09/26",
+      "sourceName": "Tech.wp.pl",
+      "articleUrl": "https://tech.wp.pl/lazik-opportunity-nadal-nie-odpowiada-nie-ma-pewnosci-dlaczego-6299466178619009a",
+      "imageUrl": null
+    },
+    {
+      "author": null,
+      "title": "Google zrobi pół kroku w tył. W Chrome pojawi się możliwość wyłączenia automatycznego logowania",
+      "description": "Google posłuchał krytyków. Logowanie do przeglądarki Chrome nie będzie już obowiązkowe, a synchronizacja danych pozostanie niestety nieprzejrzysta.",
+      "date": "2018/09/26",
+      "sourceName": "Spidersweb.pl",
+      "articleUrl": "https://www.spidersweb.pl/2018/09/logowanie-do-chrome-69-google-sie-wycofuje.html",
+      "imageUrl": "https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2018/09/automatyczne-logowanie-do-chrome-google-zmienia-zdanie.jpg"
+    },
+    {
+      "author": "mGSM.pl / PIK Sp. z o.o.",
+      "title": "Samsung Galaxy P30 - poznajemy kolejne szczegóły",
+      "description": "Samsung Galaxy P30 zabłysnął wczoraj na",
+      "date": "2018/09/26",
+      "sourceName": "Mgsm.pl",
+      "articleUrl": "http://www.mgsm.pl/pl/aktualnosci/9904/",
+      "imageUrl": "http://files.mgsm.pl//news/9904/opak1-35853-large.jpg"
+    },
+    {
+      "author": "Adrian Werner",
+      "title": "Games with Gold w październiku - m.in. Hitman: Blood Money i Victor Vran",
+      "description": "Microsoft ujawnił produkcje na konsole Xbox One i Xbox 360, które otrzymają w październiku abonenci Xbox Live Gold. Tym razem dostaniemy gry Hitman: Blood Money, Overcooked, Victor Vran oraz Stuntman: Ignition.",
+      "date": "2018/09/26",
+      "sourceName": "Gry-online.pl",
+      "articleUrl": "https://www.gry-online.pl/S013.asp?ID=111281",
+      "imageUrl": "https://www.gry-online.pl/i/h/17/594335812.jpg"
+    },
+    {
+      "author": null,
+      "title": "Microsoft Ignite: Office 2019 i zmiany w Teams",
+      "description": null,
+      "date": "2018/09/25",
+      "sourceName": "Chip.pl",
+      "articleUrl": "https://www.chip.pl/2018/09/microsoft-ignite-office-2019-i-zmiany-w-teams/",
+      "imageUrl": null
+    },
+    {
+      "author": "",
+      "title": "Nvidia ujawniła datę sklepowej premiery kart GeForce RTX 2070",
+      "description": "Tylko czy ktoś na to w ogóle czeka? Nvidia ujawniła dzisiaj datę wprowadzenia do sprzedaży kart GeForce RTX 2070. Sprzęt trafi do pierwszych nabywców w połowie przyszłego miesiąca, ale patrząc jak wygląda sytuacja z wyższymi w hierarchii modelami nie można wy…",
+      "date": "2018/09/25",
+      "sourceName": "Pclab.pl",
+      "articleUrl": "https://pclab.pl/news78887.html",
+      "imageUrl": "https://pclab.pl/index.php?file=process&action=getIcon&id=78887"
+    }
+  ]
 }
