@@ -13,10 +13,7 @@ Simple application that works as mediator of external API calls [NewsAPI](https:
 `./gradlew test` - to run tests. <BR>
 `./gradlew clean build test` - all in one command. <BR>
 
-Documentation can be found here
-```
-http://localhost:8080//swagger-ui.html#/
-```
+Documentation can be found here `http://localhost:8080//swagger-ui.html#/`
 
 <BR>
 
