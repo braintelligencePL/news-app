@@ -16,8 +16,12 @@ Simple application that works as mediator of external API calls [NewsAPI](https:
 Documentation can be found here `http://localhost:8080//swagger-ui.html#/`
 
 <BR>
+  
+`GET: /news/{country}/{category} - shows top-headlines
 
 ## Working with frontend
+
+Frontend can be found here: `http://localhost:8081/`
 
 Frontend generated with [vue-cli](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
 
