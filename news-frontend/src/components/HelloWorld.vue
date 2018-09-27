@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    sadasd
+    <h1>asdasda</h1>
   </div>
 </template>
 

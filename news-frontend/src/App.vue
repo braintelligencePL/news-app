@@ -1,14 +1,16 @@
 <template>
-    <div id="app"></div>
+    <div id="app">
+        <ArticleRoot></ArticleRoot>
+    </div>
 </template>
 
 <script>
-    import HelloWorld from './components/HelloWorld.vue'
+    import ArticleRoot from './components/articleRoot/ArticleRoot.vue'
 
     export default {
         name: 'app',
         components: {
-            HelloWorld
+            ArticleRoot
         }
     }
 </script>
