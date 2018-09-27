@@ -5,6 +5,8 @@ Simple application that works as mediator of external API calls [NewsAPI](https:
 ## Pre-setup for IDE (IntellJ Idea)
 - [x] `enable annotation processing` in your IDE
 
+<BR>
+
 ## Working with backend
 
 `./gradlew bootRun` - to run application. <BR>
@@ -16,6 +18,7 @@ Documentation can be found here
 http://localhost:8080//swagger-ui.html#/
 ```
 
+<BR>
 
 ## Working with frontend
 
