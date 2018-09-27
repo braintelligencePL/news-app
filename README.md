@@ -17,7 +17,7 @@ Documentation can be found here `http://localhost:8080//swagger-ui.html#/`
 
 <BR>
   
-`GET: /news/{country}/{category} - shows top-headlines
+`GET: /news/{country}/{category}` - shows top-headlines
 
 ## Working with frontend
 
