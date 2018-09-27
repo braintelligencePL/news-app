@@ -13,10 +13,10 @@ import static com.github.tomakehurst.wiremock.client.WireMock.urlMatching
 
 class NewsEndpointStubs {
 
-    private static final String URL = "/news/pl/technology"
+    private static final String URL_WITH_COUNTRY_AND_CATEGORY = "/news/pl/technology"
 
     static StubMapping stubNewsApiResponse() {
-        return stubFor(get(urlMatching(URL)).willReturn(aResponse()
+        return stubFor(get(urlMatching(URL_WITH_COUNTRY_AND_CATEGORY)).willReturn(aResponse()
                 .withStatus(HttpStatus.OK.value())
                 .withHeader(HttpHeaders.CONTENT_TYPE, "application/json")
                 .withBody(getFileContent("stubs/NewsEndpointResponse_NewsDto.json"))))
