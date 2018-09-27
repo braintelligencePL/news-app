@@ -22,11 +22,12 @@ public class NewsService {
         this.newsClient = newsClient;
     }
 
-    public ResponseEntity<NewsDto> getNews(String country, String category) {
+    public ResponseEntity<NewsDto> getNews(String country, String category, String page) {
         logger.info("Getting top headlines from NewsAPI for category={}, country={}", category, country);
-        return ResponseEntity.ok().body(
-                DtoMapper.mapToNewsDto(
-                        newsClient.getTopHeadlines(country, category))
-        );
+        return ResponseEntity.ok().
+                body(
+                        DtoMapper.mapToNewsDto(
+                                newsClient.getTopHeadlines(country, category, page))
+                );
     }
 }

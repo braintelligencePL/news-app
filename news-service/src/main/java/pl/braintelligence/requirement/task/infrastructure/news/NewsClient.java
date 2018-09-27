@@ -37,13 +37,14 @@ public class NewsClient {
         this.restTemplate = restTemplate;
     }
 
-    public News getTopHeadlines(String country, String category) {
+    public News getTopHeadlines(String country, String category, String page) {
         News news = new News(mapToCountry(country), mapToCategory(category));
 
         URI targetUrl = UriComponentsBuilder.fromUriString(topHeadlinesUri)
                 .queryParam("apiKey", apiKey)
                 .queryParam("category", category)
                 .queryParam("country", country)
+                .queryParam("page", page)
                 .build().toUri();
 
         logger.info("Getting top headlines with url={}", targetUrl);

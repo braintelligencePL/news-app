@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import pl.braintelligence.requirement.task.application.NewsService;
@@ -23,10 +24,11 @@ public class NewsEndpoint {
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/{country}/{category}")
-    public ResponseEntity<NewsDto> getNews(
+    public ResponseEntity<NewsDto> getTopHeadlines(
             @PathVariable String country,
-            @PathVariable String category
+            @PathVariable String category,
+            @RequestParam(value = "page", defaultValue = "1") String page
     ) {
-        return newsService.getNews(country, category);
+        return newsService.getNews(country, category, page);
     }
 }

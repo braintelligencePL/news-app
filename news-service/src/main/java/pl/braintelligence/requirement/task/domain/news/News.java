@@ -14,6 +14,8 @@ public class News {
     private Category category;
     private List<Article> articles;
 
+    public News() {}
+
     public News(Country country, Category category) {
         validateCountry(country);
         validateCategory(category);
@@ -57,7 +59,6 @@ public class News {
         this.articles = articles;
     }
 
-    private News() {
-    }
+
 }
 
