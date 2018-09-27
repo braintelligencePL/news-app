@@ -1,18 +1,23 @@
 <template>
     <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" v-bind:src="imageUrl">
+        <div class="card mb-4 shadow-sm box-shadow">
+            <img class="card-img-top" v-bind:src="imageUrl" width="20" height="200px">
             <div class="card-body accordion">
+                <h4 class="display-5"><a v-bind:href="articleUrl">{{title}}</a></h4>
 
-                <div class="my-3 py-3">
-                    <h2 class="display-5">{{title}}</h2>
-                </div>
-
-                <p class="card-text">{{description}}}</p>
-                <a class="btn btn-sm btn-outline-secondary" v-bind:href="articleUrl">Read Article</a>
+                <p class="card-text">{{description}}</p>
 
                 <br>
-                <small class="text-muted">{{author}}</small>
+                <br>
+                <div>{{sourceName}}</div>
+                <div v-if="author.includes('http')">
+                    <small><a v-bind:href="author">{{author}}</a></small>
+                </div>
+                <div v-else>
+                    <small>{{author}}</small>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -32,3 +37,12 @@
         }
     }
 </script>
+
+<style scoped>
+    .box-shadow {
+        display: block;
+        margin: 10px auto 25px;
+        border-radius: 2%;
+        box-shadow: 0px 7px 10px 0px;
+    }
+</style>

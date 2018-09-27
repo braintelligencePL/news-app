@@ -13,7 +13,7 @@
 </template>
 
 <script>
-    import {fetchArticles} from "../api";
+    import {fetchArticles} from "../../api/api";
     import Article from "../article/Article";
 
     export default {
