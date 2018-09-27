@@ -16,8 +16,8 @@ Documentation can be found here
 http://localhost:8080//swagger-ui.html#/
 ```
 
-## Working with frontend
 
+## Working with frontend
 
 Frontend generated with [vue-cli](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
 
