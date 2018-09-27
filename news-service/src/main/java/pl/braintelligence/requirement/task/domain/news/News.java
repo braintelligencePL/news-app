@@ -22,14 +22,15 @@ public class News {
     }
 
     private void validateCategory(Category category) {
-        if(category.isInvalid())
+        if (category.isInvalid()) {
             throw new InvalidCodeException(ErrorCode.NONEXISTENT_CATEGORY);
-
+        }
     }
 
     private void validateCountry(Country country) {
-        if(country.isInvalid())
+        if (country.isInvalid()) {
             throw new InvalidCodeException(ErrorCode.NONEXISTENT_COUNTRY);
+        }
     }
 
     public Country getCountry() {
