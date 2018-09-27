@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 @EnableConfigurationProperties
 @ConfigurationProperties
-public class ApplicationConfiguration {
+public class AppConfig {
 
     @Value("${application.connectTimeout}")
     private int connectTimeout;

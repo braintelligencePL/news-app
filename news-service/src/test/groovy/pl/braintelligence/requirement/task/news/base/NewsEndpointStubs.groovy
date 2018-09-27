@@ -11,7 +11,7 @@ import static com.github.tomakehurst.wiremock.client.WireMock.get
 import static com.github.tomakehurst.wiremock.client.WireMock.stubFor
 import static com.github.tomakehurst.wiremock.client.WireMock.urlMatching
 
-class NewsStubs {
+class NewsEndpointStubs {
 
     private static final String URL = "/news/pl/technology"
 

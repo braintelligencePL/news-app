@@ -1,6 +1,8 @@
 package pl.braintelligence.requirement.task.infrastructure.news;
 
 import static java.util.Objects.*;
+import static pl.braintelligence.requirement.task.application.utils.DtoMapper.*;
+import static pl.braintelligence.requirement.task.application.utils.DtoMapper.mapToCountry;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,7 +38,7 @@ public class NewsClient {
     }
 
     public News getTopHeadlines(String country, String category) {
-        News news = new News(country, category);
+        News news = new News(mapToCountry(country), mapToCategory(category));
 
         URI targetUrl = UriComponentsBuilder.fromUriString(topHeadlinesUri)
                 .queryParam("apiKey", apiKey)

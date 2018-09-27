@@ -1,23 +1,18 @@
 package pl.braintelligence.requirement.task.domain.values;
 
-public enum Language {
-    AR,
-    DE,
-    EN,
-    ES,
-    FR,
-    HE,
-    IT,
-    NL,
-    NO,
-    PT,
-    RU,
-    SE,
-    UD,
-    ZH,
+public enum Category {
+
+    business,
+    entertainment,
+    general,
+    health,
+    science,
+    sports,
+    technology,
     INVALID;
 
     public boolean isInvalid() {
         return this == INVALID;
     }
+
 }

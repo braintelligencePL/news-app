@@ -1,6 +1,6 @@
 application:
-  connectTimeout: 500
-  readTimeout: 500
+  connectTimeout: 5000
+  readTimeout: 5000
 
 news-service:
   top-headlines: https://newsapi.org/v2/top-headlines
