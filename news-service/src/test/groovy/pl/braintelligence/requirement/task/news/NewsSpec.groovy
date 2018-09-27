@@ -35,7 +35,7 @@ class NewsSpec extends BaseIntegrationSpec implements OperatingOnNewsEndpoint {
     }
 
     def "Should get stubbed top-headlines from NewsAPI"() {
-        given: "prepare stub for endpoint /news/{country}/{category}"
+        given: "prepare stub for news"
         stubNewsApiResponse()
 
         when: "user asks for top-headlines"

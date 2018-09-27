@@ -46,7 +46,7 @@ public class NewsClient {
                 .queryParam("country", country)
                 .build().toUri();
 
-        logger.info("Getting top headlines with url={}", targetUrl, category, country);
+        logger.info("Getting top headlines with url={}", targetUrl);
 
         news.setArticles(
                 requireNonNull(
