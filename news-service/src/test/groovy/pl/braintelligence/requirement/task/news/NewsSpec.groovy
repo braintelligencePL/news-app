@@ -13,10 +13,10 @@ class NewsSpec extends BaseIntegrationSpec implements OperatingOnNewsEndpoint {
         def nonExistentCategory = "tech 123"
         def country = "pl"
 
-        when:
+        when: "user asks for top headlines with non existent category"
         def response = getTopHeadlines(nonExistentCategory, country)
 
-        then:
+        then: "system response that category doesn't exist"
         response.statusCode == UNPROCESSABLE_ENTITY
         response.body.message == 'NONEXISTENT_CATEGORY'
     }
@@ -26,10 +26,10 @@ class NewsSpec extends BaseIntegrationSpec implements OperatingOnNewsEndpoint {
         def category = "technology"
         def nonExistentCountry = "1234"
 
-        when:
+        when: "user asks for top headlines with non existent country"
         def response = getTopHeadlines(category, nonExistentCountry)
 
-        then:
+        then: "system response that country doesn't exist"
         response.statusCode == UNPROCESSABLE_ENTITY
         response.body.message == 'NONEXISTENT_COUNTRY'
     }
@@ -39,10 +39,11 @@ class NewsSpec extends BaseIntegrationSpec implements OperatingOnNewsEndpoint {
         stubNewsApiResponse()
 
         when: "user asks for top-headlines"
-        def response = getTopHeadlines()
+        def response = getTopHeadlines("news/pl/technology")
 
         then: "verify that system response is correct"
         response.statusCode.is2xxSuccessful()
+        response.body.articles.size == 20
         response.body.country == "pl"
         response.body.category == "technology"
         response.body.articles[12].date == "2018/09/26"
@@ -53,5 +54,6 @@ class NewsSpec extends BaseIntegrationSpec implements OperatingOnNewsEndpoint {
         response.body.articles[11].description == "Lepiej późno niż wcale. Microsoft udostępni deweloperom możliwość zaimplementowania obsługi tych pecetowych narzędzi w swoich grach."
         response.body.articles[2].imageUrl == "https://ocdn.eu/pulscms-transforms/1/NRCktkqTURBXy9lNDBjZmFkYWJiMzA3MzhmNTU2MmRiM2ZhMDcyYzY1Ny5qcGVnkpUDGADNAm7NAV6TBc0B4M0BaA"
     }
+
 
 }

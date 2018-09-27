@@ -23,7 +23,10 @@ public class NewsEndpoint {
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/{country}/{category}")
-    public ResponseEntity<NewsDto> getNews(@PathVariable String country, @PathVariable String category) {
+    public ResponseEntity<NewsDto> getNews(
+            @PathVariable String country,
+            @PathVariable String category
+    ) {
         return newsService.getNews(country, category);
     }
 }

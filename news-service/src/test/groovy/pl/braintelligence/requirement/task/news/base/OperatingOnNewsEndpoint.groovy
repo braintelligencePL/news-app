@@ -11,8 +11,8 @@ trait OperatingOnNewsEndpoint implements BaseHttpMethodsSpec {
         return LOCAL_URL + path
     }
 
-    ResponseEntity getTopHeadlines() {
-        return get(localUrl("news/pl/technology"), Object)
+    ResponseEntity getTopHeadlines(String path) {
+        return get(localUrl(path), Object)
     }
 
     ResponseEntity getTopHeadlines(String category, String country) {
