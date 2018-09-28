@@ -1,5 +1,15 @@
 <template>
     <div class="album py-5 bg-light">
+
+        <select v-model="selectedCategory">
+            <option disabled value="">Please select one</option>
+            <option>technology</option>
+            <option>business</option>
+        </select>
+        <span>Selected: {{ selectedCategory }}</span>
+
+
+        <br>
         <div class="container">
             <div class="row">
                 <Article
@@ -20,10 +30,22 @@
         name: 'ArticleRoot',
         components: {Article},
         data() {
-            return {articles: []}
+            return {
+                articles: [],
+                selectedCategory: this.selectedCategory || "technology"
+            }
         },
+
+        watch: {
+            'selectedCategory': function (newVal) {
+                fetchArticles(newVal).then(res => {
+                    this.articles = res.articles;
+                });
+            }
+        },
+
         mounted() {
-            fetchArticles()
+            fetchArticles("technology")
                 .then(res => {
                     this.articles = res.articles;
                 });

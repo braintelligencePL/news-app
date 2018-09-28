@@ -17,7 +17,6 @@
                     <small>{{author}}</small>
                 </div>
 
-
             </div>
         </div>
     </div>

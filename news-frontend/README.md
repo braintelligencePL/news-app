@@ -24,3 +24,7 @@ npm run test
 ```
 npm run lint
 ```
+
+
+## To install
+`npm install bootstrap`
