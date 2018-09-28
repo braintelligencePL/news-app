@@ -22,21 +22,19 @@ public class NewsService {
         this.newsClient = newsClient;
     }
 
-    public ResponseEntity<NewsDto> getNews(String country, String category, String page) {
+    public ResponseEntity<NewsDto> getTopHeadlines(String country, String category, String page) {
         logger.info("Getting top headlines from NewsAPI for category={}, country={}", category, country);
-        return ResponseEntity.ok().
-                body(
-                        DtoMapper.mapToNewsDto(
-                                newsClient.getTopHeadlines(country, category, page))
-                );
+        return ResponseEntity.ok().body(
+                DtoMapper.mapToNewsDto(
+                        newsClient.getTopHeadlines(country, category, page))
+        );
     }
 
-    public ResponseEntity<NewsDto> getQueryNews(String query) {
+    public ResponseEntity<NewsDto> queryForNews(String query) {
         logger.info("Getting news from NewsAPI for query={}", query);
-        return ResponseEntity.ok().
-                body(
-                        DtoMapper.mapToQueryNewsDto(
-                                newsClient.getQueryNews(query))
-                );
+        return ResponseEntity.ok().body(
+                DtoMapper.mapToQueryNewsDto(
+                        newsClient.getQueryNews(query))
+        );
     }
 }

@@ -29,15 +29,15 @@ public class NewsEndpoint {
             @PathVariable String category,
             @RequestParam(value = "page", defaultValue = "1") String page
     ) {
-        return newsService.getNews(country, category, page);
+        return newsService.getTopHeadlines(country, category, page);
     }
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping
-    public ResponseEntity<NewsDto> getNews(
+    public ResponseEntity<NewsDto> queryForNews(
             @RequestParam(value = "query") String query
     ) {
-        return newsService.getQueryNews(query);
+        return newsService.queryForNews(query);
     }
 
 }
