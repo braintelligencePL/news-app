@@ -56,4 +56,23 @@ public class NewsClient {
 
         return news;
     }
+
+    public News getQueryNews(String query) {
+        News news = new News();
+
+        URI targetUrl = UriComponentsBuilder.fromUriString(topHeadlinesUri)
+                .queryParam("apiKey", apiKey)
+                .queryParam("q", query)
+                .build().toUri();
+
+        logger.info("Getting news with url={}", targetUrl);
+
+        news.setArticles(
+                requireNonNull(
+                        restTemplate.getForEntity(targetUrl, News.class).getBody())
+                        .getArticles());
+
+        return news;
+    }
+
 }

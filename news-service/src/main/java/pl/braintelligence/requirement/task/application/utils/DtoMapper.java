@@ -24,6 +24,16 @@ public class DtoMapper {
         return newsDto;
     }
 
+    public static NewsDto mapToQueryNewsDto(News news) {
+        NewsDto newsDto = new NewsDto();
+        newsDto.setCountry(null);
+        newsDto.setCategory(null);
+        newsDto.setArticles(news.getArticles().stream()
+                .map(DtoMapper::mapToNewsArticle)
+                .collect(Collectors.toList()));
+        return newsDto;
+    }
+
     private static NewsArticle mapToNewsArticle(Article article) {
         NewsArticle newsArticle = new NewsArticle();
         newsArticle.setAuthor(article.getAuthor());
@@ -59,5 +69,4 @@ public class DtoMapper {
             return Category.INVALID;
         }
     }
-
 }

@@ -30,4 +30,13 @@ public class NewsService {
                                 newsClient.getTopHeadlines(country, category, page))
                 );
     }
+
+    public ResponseEntity<NewsDto> getQueryNews(String query) {
+        logger.info("Getting news from NewsAPI for query={}", query);
+        return ResponseEntity.ok().
+                body(
+                        DtoMapper.mapToQueryNewsDto(
+                                newsClient.getQueryNews(query))
+                );
+    }
 }

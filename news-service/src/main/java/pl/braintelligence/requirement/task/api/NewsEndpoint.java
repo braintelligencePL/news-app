@@ -31,4 +31,13 @@ public class NewsEndpoint {
     ) {
         return newsService.getNews(country, category, page);
     }
+
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping
+    public ResponseEntity<NewsDto> getNews(
+            @RequestParam(value = "query") String query
+    ) {
+        return newsService.getQueryNews(query);
+    }
+
 }
