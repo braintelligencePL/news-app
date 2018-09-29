@@ -39,21 +39,21 @@ Frontend can be found here: `http://localhost:8081/`
 
 ## Run applications with Docker:
 
-Run both front + back: 
-- `docker-compose build`
-- `docker-compose up`
-Frontend here: `http://localhost:8081/`
-Backend here: `http://localhost:8080/...`
-Backend documentation here: `http://localhost:8080/api/swagger-ui.html`
+Run both front + back: <br>
+- `docker-compose build`<br>
+- `docker-compose up`<br>
+Frontend here: `http://localhost:8081/`<br>
+Backend here: `http://localhost:8080/...`<br>
+Backend documentation here: `http://localhost:8080/api/swagger-ui.html`<br>
 
-#### Additionally
-Backend
+### Additionally
+#### Backend
 - `cd news-service` 
 - `./gradlew clean build docker`
 - `docker build -f Dockerfile -t docker-news-service .`
 - `docker run -p 8080:8080 docker-news-service`
 
-Frontend
+#### Frontend
 - `cd news-frontend`
 - `docker build -t vuejs-cookbook/dockerize-vuejs-app .`
 - `docker run -it -p 8080:80 --rm --name dockerize-vuejs-app-1 vuejs-cookbook/dockerize-vuejs-app`
