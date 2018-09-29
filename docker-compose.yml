@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  news-service:
+    build: ./news-service
+    volumes:
+      - ./news-service:/usr/src/app
+    ports:
+      - 8080:8080
+
+  news-frontend:
+    build: ./news-frontend
+    volumes: 
+      - .:/app
+    ports:
+      - 8081:80
