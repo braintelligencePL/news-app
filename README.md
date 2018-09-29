@@ -36,6 +36,14 @@ Frontend can be found here: `http://localhost:8081/`
 
 ## Run applications with Docker:
 
+Run both front + back: 
+- `docker-compose build`
+- `docker-compose up`
+Frontend here: `http://localhost:8081/`
+Backend here: `http://localhost:8080/...`
+Backend documentation here: `http://localhost:8080/api/swagger-ui.html`
+
+#### Additionally
 Backend
 - `cd news-service` 
 - `./gradlew clean build docker`
@@ -49,5 +57,3 @@ Frontend
 
 To show running containers run command `docker ps`. <br>
 To show your local docker images run command `docker images`. <br>
-
-
