@@ -19,6 +19,8 @@ Simple application that works as mediator of external API calls [NewsAPI](https:
 
 Generated documentation can be found here `http://localhost:8080/api/swagger-ui.html`
 
+<br>
+
 ## Working with frontend (non-docker)
 
 Frontend is generated with [vue-cli](https://cli.vuejs.org/guide/creating-a-project.html#vue-create).
@@ -29,6 +31,8 @@ Compiles and minifies for production `npm run build` <br>
 Lints and fixes files `npm run lint` <br>
 
 Frontend can be found here: `http://localhost:8081/`
+
+<br>
 
 ## Run applications with Docker:
 
