@@ -5,7 +5,7 @@ Simple application that works as mediator of external API calls [NewsAPI](https:
 <BR>
   
 ### Endpoints:
-`GET: /news/{country}/{category}` - shows top-headlines articles.
+`GET: /news/{country}/{category}` - shows top-headlines articles. <BR>
 `GET: /news?q=programming` - you can search for articles e.g. programming.
 
 ## Pre-setup for IDE (IntellJ Idea)
