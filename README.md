@@ -6,9 +6,7 @@ Simple application that works as mediator of external API calls [NewsAPI](https:
 `GET: /news/{country}/{category}` - shows top-headlines articles. <BR>
 `GET: /news?q=programming` - you can search for articles e.g. programming.
 
-<BR>
-
-## Pre-setup for IDE (IntellJ Idea)
+### Pre-setup for IDE (IntellJ Idea)
 - [x] `enable annotation processing` in your IDE
 
 <BR>
@@ -21,13 +19,16 @@ Simple application that works as mediator of external API calls [NewsAPI](https:
 
 Generated documentation can be found here `http://localhost:8080/api/swagger-ui.html`
 
-
 ## Working with frontend (non-docker)
-
-Frontend can be found here: `http://localhost:8081/`
 
 Frontend is generated with [vue-cli](https://cli.vuejs.org/guide/creating-a-project.html#vue-create).
 
+Project setup `npm install` <br>
+Compiles and hot-reloads for development `npm run serve` <br>
+Compiles and minifies for production `npm run build` <br>
+Lints and fixes files `npm run lint` <br>
+
+Frontend can be found here: `http://localhost:8081/`
 
 ## Run applications with Docker:
 
