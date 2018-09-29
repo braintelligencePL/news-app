@@ -40,6 +40,7 @@ Frontend can be found here: `http://localhost:8081/`
 ## Run applications with Docker:
 
 Run both front + back: <br>
+- `cd news-service && ./gradlew clean build docker` <br>
 - `docker-compose build`<br>
 - `docker-compose up`<br>
 Frontend here: `http://localhost:8081/`<br>
