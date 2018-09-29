@@ -1,12 +1,12 @@
 # News Application
 
 Simple application that works as mediator of external API calls [NewsAPI](https://newsapi.org/docs/endpoints/top-headlines)
-
-<BR>
   
 ### Endpoints:
 `GET: /news/{country}/{category}` - shows top-headlines articles. <BR>
 `GET: /news?q=programming` - you can search for articles e.g. programming.
+
+<BR>
 
 ## Pre-setup for IDE (IntellJ Idea)
 - [x] `enable annotation processing` in your IDE
@@ -42,7 +42,7 @@ Frontend
 - `docker build -t vuejs-cookbook/dockerize-vuejs-app .`
 - `docker run -it -p 8080:80 --rm --name dockerize-vuejs-app-1 vuejs-cookbook/dockerize-vuejs-app`
 
-To show running containers run command `docker ps`.
-To show your local docker images run command `docker images`.
+To show running containers run command `docker ps`. <br>
+To show your local docker images run command `docker images`. <br>
 
 
