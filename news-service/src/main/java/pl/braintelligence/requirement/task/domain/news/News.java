@@ -25,16 +25,12 @@ public class News {
     }
 
     private void validateCategory(Category category) {
-        if (category == null)
-            throw new InvalidCodeException(ErrorCode.EMPTY_CATEGORY);
         if (category.isInvalid())
             throw new InvalidCodeException(ErrorCode.NONEXISTENT_CATEGORY);
 
     }
 
     private void validateCountry(Country country) {
-        if (category == null)
-            throw new InvalidCodeException(ErrorCode.EMPTY_COUNTRY);
         if (country.isInvalid())
             throw new InvalidCodeException(ErrorCode.NONEXISTENT_COUNTRY);
 
