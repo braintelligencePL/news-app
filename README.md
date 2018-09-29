@@ -60,3 +60,4 @@ Backend documentation here: `http://localhost:8080/api/swagger-ui.html`<br>
 
 To show running containers run command `docker ps`. <br>
 To show your local docker images run command `docker images`. <br>
+[used commands description](https://github.com/braintelligencePL/playgrounds/tree/master/tips_tricks/docker)
