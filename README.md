@@ -13,9 +13,9 @@ Simple application that works as mediator of external API calls [NewsAPI](https:
 
 ## Working with backend (non-docker)
 
-`./gradlew bootRun` - to run application. <BR>
-`./gradlew test` - to run tests. <BR>
-`./gradlew clean build test` - all in one command. <BR>
+`./gradlew bootRun` - to run application <BR>
+`./gradlew test` - to run tests <BR>
+`./gradlew clean build test` - all in one command <BR>
 
 Generated documentation can be found here `http://localhost:8080/api/swagger-ui.html`
 
@@ -25,10 +25,10 @@ Generated documentation can be found here `http://localhost:8080/api/swagger-ui.
 
 Frontend is generated with [vue-cli](https://cli.vuejs.org/guide/creating-a-project.html#vue-create).
 
-Project setup `npm install` <br>
-Compiles and hot-reloads for development `npm run serve` <br>
-Compiles and minifies for production `npm run build` <br>
-Lints and fixes files `npm run lint` <br>
+`npm install` - project setup  <br>
+`npm run serve` - compiles and hot-reloads for development <br>
+`npm run build` - compiles and minifies for production <br>
+`npm run lint` - lints and fixes files  <br>
 
 Frontend can be found here: `http://localhost:8081/`
 
