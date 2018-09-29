@@ -10,7 +10,7 @@ Simple application that works as mediator of external API calls [NewsAPI](https:
 - [x] `enable annotation processing` in your IDE
 
 ### Prerequisites 
-- JDK, Docker, npm
+- min. JDK-8, Docker, npm
 
 <BR>
 
