@@ -46,8 +46,12 @@
 </script>
 
 <style scoped>
+    .col-md-4 {
+        display: flex;
+    }
+
     .box-shadow {
-        display: block;
+        display: flex;
         margin: 10px auto 25px;
         border-radius: 2%;
         box-shadow: 0px 7px 10px 0px;

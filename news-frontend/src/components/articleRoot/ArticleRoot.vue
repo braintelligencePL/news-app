@@ -28,7 +28,7 @@
 </template>
 
 <script>
-    import {fetchArticles} from "../../api/api";
+    import {fetchArticlesByCountryAndCategory} from "../../api/api";
     import Article from "../article/Article";
 
     export default {
@@ -44,14 +44,14 @@
 
         watch: {
             'selectedCategory': function (newVal) {
-                fetchArticles(newVal).then(res => {
+                fetchArticlesByCountryAndCategory(newVal).then(res => {
                     this.articles = res.articles;
                 });
             }
         },
 
         mounted() {
-            fetchArticles("technology")
+            fetchArticlesByCountryAndCategory("technology")
                 .then(res => {
                     this.articles = res.articles;
                 });
@@ -61,6 +61,7 @@
 </script>
 
 <style scoped>
+
     .custom-input {
         margin-left: 50px;
         width: 300px;
