@@ -30,11 +30,11 @@ public class NewsService {
         );
     }
 
-    public ResponseEntity<NewsDto> queryForNews(String query) {
+    public ResponseEntity<NewsDto> getArticlesByQuery(String query) {
         logger.info("Getting news from NewsAPI for query={}", query);
         return ResponseEntity.ok().body(
                 DtoMapper.mapToQueryNewsDto(
-                        newsClient.getQueryNews(query))
+                        newsClient.getArticlesByQuery(query))
         );
     }
 }

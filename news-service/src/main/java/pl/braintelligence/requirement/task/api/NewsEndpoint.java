@@ -34,10 +34,9 @@ public class NewsEndpoint {
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping
-    public ResponseEntity<NewsDto> queryForNews(
+    public ResponseEntity<NewsDto> getArticlesByQuery(
             @RequestParam(value = "query") String query
     ) {
-        return newsService.queryForNews(query);
+        return newsService.getArticlesByQuery(query);
     }
-
 }

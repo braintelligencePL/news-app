@@ -4,6 +4,4 @@ public enum ErrorCode {
 
     NONEXISTENT_COUNTRY,
     NONEXISTENT_CATEGORY,
-    EMPTY_CATEGORY,
-    EMPTY_COUNTRY
 }

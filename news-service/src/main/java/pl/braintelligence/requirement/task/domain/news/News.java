@@ -3,7 +3,7 @@ package pl.braintelligence.requirement.task.domain.news;
 import java.util.List;
 
 import pl.braintelligence.requirement.task.domain.exceptions.ErrorCode;
-import pl.braintelligence.requirement.task.domain.exceptions.InvalidCodeException;
+import pl.braintelligence.requirement.task.domain.exceptions.InvalidEntityException;
 import pl.braintelligence.requirement.task.domain.values.Article;
 import pl.braintelligence.requirement.task.domain.values.Category;
 import pl.braintelligence.requirement.task.domain.values.Country;
@@ -26,13 +26,13 @@ public class News {
 
     private void validateCategory(Category category) {
         if (category.isInvalid())
-            throw new InvalidCodeException(ErrorCode.NONEXISTENT_CATEGORY);
+            throw new InvalidEntityException(ErrorCode.NONEXISTENT_CATEGORY);
 
     }
 
     private void validateCountry(Country country) {
         if (country.isInvalid())
-            throw new InvalidCodeException(ErrorCode.NONEXISTENT_COUNTRY);
+            throw new InvalidEntityException(ErrorCode.NONEXISTENT_COUNTRY);
 
     }
 

@@ -13,10 +13,10 @@ class NewsSpec extends BaseIntegrationSpec implements OperatingOnNewsEndpoint {
         def nonExistentCategory = "tech 123"
         def country = "pl"
 
-        when: "user asks for top headlines with non existent category"
+        when: "user asks for top-headlines articles from non-existent category"
         def response = getTopHeadlines(nonExistentCategory, country)
 
-        then: "system response that category doesn't exist"
+        then: "system response - category doesn't exist"
         response.statusCode == UNPROCESSABLE_ENTITY
         response.body.message == 'NONEXISTENT_CATEGORY'
     }
@@ -26,15 +26,15 @@ class NewsSpec extends BaseIntegrationSpec implements OperatingOnNewsEndpoint {
         def category = "technology"
         def nonExistentCountry = "1234"
 
-        when: "user asks for top headlines with non existent country"
+        when: "user asks for top-headlines articles from non-existent country"
         def response = getTopHeadlines(category, nonExistentCountry)
 
-        then: "system response that country doesn't exist"
+        then: "system response - country doesn't exist"
         response.statusCode == UNPROCESSABLE_ENTITY
         response.body.message == 'NONEXISTENT_COUNTRY'
     }
 
-    def "Should get stubbed top-headlines from NewsAPI"() {
+    def "Should return stubbed top-headlines articles from NewsAPI"() {
         given: "prepare stub for news"
         stubNewsApiResponse()
 
@@ -54,6 +54,5 @@ class NewsSpec extends BaseIntegrationSpec implements OperatingOnNewsEndpoint {
         response.body.articles[11].description == "Lepiej późno niż wcale. Microsoft udostępni deweloperom możliwość zaimplementowania obsługi tych pecetowych narzędzi w swoich grach."
         response.body.articles[2].imageUrl == "https://ocdn.eu/pulscms-transforms/1/NRCktkqTURBXy9lNDBjZmFkYWJiMzA3MzhmNTU2MmRiM2ZhMDcyYzY1Ny5qcGVnkpUDGADNAm7NAV6TBc0B4M0BaA"
     }
-
 
 }

@@ -57,7 +57,7 @@ public class NewsClient {
         return news;
     }
 
-    public News getQueryNews(String query) {
+    public News getArticlesByQuery(String query) {
         News news = new News();
 
         URI targetUrl = UriComponentsBuilder.fromUriString(topHeadlinesUri)
