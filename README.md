@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # News Application
 
 Simple application that works as mediator of external API calls [NewsAPI](https://newsapi.org/docs/endpoints/top-headlines)
@@ -60,9 +59,6 @@ Backend documentation here: `http://localhost:8080/api/swagger-ui.html`<br>
 - `docker build -t vuejs-cookbook/dockerize-vuejs-app .`
 - `docker run -it -p 8080:80 --rm --name dockerize-vuejs-app-1 vuejs-cookbook/dockerize-vuejs-app`
 
-[Commands description](https://github.com/braintelligencePL/playgrounds/tree/master/tips_tricks/docker) <BR>
+[Commands description](https://github.com/braintelligencePL/playgrounds/tree/master/tips_tricks/docker) <br>
 To show running containers run command `docker ps`. <br>
 To show your local docker images run command `docker images`. <br>
-=======
-
->>>>>>> master
