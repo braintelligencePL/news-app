@@ -1,7 +1,9 @@
 # News Application
 
 Simple application that works as mediator of external API calls [NewsAPI](https://newsapi.org/docs/endpoints/top-headlines)
-  
+
+![](/images/frontend.png)
+
 ### Endpoints:
 `GET: /news/{country}/{category}` - shows top-headlines articles. <BR>
 `GET: /news?q=programming` - you can search for articles e.g. programming.
