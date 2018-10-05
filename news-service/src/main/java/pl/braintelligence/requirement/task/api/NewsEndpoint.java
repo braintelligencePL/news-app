@@ -2,17 +2,12 @@ package pl.braintelligence.requirement.task.api;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.*;
 
 import pl.braintelligence.requirement.task.application.NewsService;
 import pl.braintelligence.requirement.task.application.dto.NewsDto;
 
-@Controller
+@RestController
 @RequestMapping("/news")
 public class NewsEndpoint {
 
@@ -24,7 +19,7 @@ public class NewsEndpoint {
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/{country}/{category}")
-    public ResponseEntity<NewsDto> getTopHeadlines(
+    public NewsDto getTopHeadlines(
             @PathVariable String country,
             @PathVariable String category,
             @RequestParam(value = "page", defaultValue = "1") String page
@@ -34,7 +29,7 @@ public class NewsEndpoint {
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping
-    public ResponseEntity<NewsDto> getArticlesByQuery(
+    public NewsDto getArticlesByQuery(
             @RequestParam(value = "query") String query
     ) {
         return newsService.getArticlesByQuery(query);
