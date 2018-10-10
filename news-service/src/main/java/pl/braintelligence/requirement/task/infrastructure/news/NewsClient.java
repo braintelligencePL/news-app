@@ -5,6 +5,7 @@ import static pl.braintelligence.requirement.task.application.utils.DtoMapper.*;
 import static pl.braintelligence.requirement.task.application.utils.DtoMapper.mapToCountry;
 import static pl.braintelligence.requirement.task.domain.exceptions.utils.ErrorCode.API_IS_NOT_AVAILABLE;
 import static pl.braintelligence.requirement.task.domain.exceptions.utils.ErrorCode.RESOURCE_NOT_FOUND;
+import static pl.braintelligence.requirement.task.domain.exceptions.utils.PreCondition.when;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -84,12 +85,9 @@ public class NewsClient {
                             .getArticles());
 
             return news;
-        } catch (HttpClientErrorException ex) {
-            throw new MissingEntityException("Requested resource not found.", RESOURCE_NOT_FOUND);
         } catch (RestClientException ex) {
             logger.error("News API doesn't respond.");
             throw new ClientException("News API doesn't respond.", API_IS_NOT_AVAILABLE);
         }
     }
-
 }

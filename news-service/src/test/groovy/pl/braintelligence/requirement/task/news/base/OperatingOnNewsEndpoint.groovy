@@ -10,6 +10,10 @@ trait OperatingOnNewsEndpoint implements BaseHttpMethodsSpec {
         return get("/news/pl/technology", NewsDto)
     }
 
+    ResponseEntity getTopHeadlinesWithAnyResponse() {
+        return get("/news/pl/technology", Object)
+    }
+
     ResponseEntity getTopHeadlines(String category, String country) {
         return get("/news/$country/$category", Object)
     }

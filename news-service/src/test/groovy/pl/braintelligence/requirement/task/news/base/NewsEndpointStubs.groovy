@@ -18,12 +18,24 @@ import static com.github.tomakehurst.wiremock.client.WireMock.urlPathMatching
 
 class NewsEndpointStubs {
 
+    private static final String VALID_URL = "/?apiKey=test&category=technology&country=pl&page=1"
+
     static StubMapping stubNewsApiResponse() {
-        return stubFor(get(urlEqualTo("/?apiKey=test&category=technology&country=pl&page=1"))
+        return stubFor(get(urlEqualTo(VALID_URL))
                 .willReturn(aResponse()
                 .withStatus(HttpStatus.OK.value())
                 .withHeader(HttpHeaders.CONTENT_TYPE, "application/json")
                 .withBody(getFileContent("stubs/NewsApiResponse.json"))))
+    }
+
+    static StubMapping stubNewsApiNotResponding() {
+        return stubFor(get(urlMatching(VALID_URL)).willReturn(aResponse()
+                .withStatus(HttpStatus.INTERNAL_SERVER_ERROR.value())))
+    }
+
+    static StubMapping stubInvalidNewsApiKey() {
+        return stubFor(get(urlMatching(VALID_URL)).willReturn(aResponse()
+                .withStatus(HttpStatus.UNAUTHORIZED.value())))
     }
 
     static String getFileContent(String filename) throws IOException {

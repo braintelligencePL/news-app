@@ -6,11 +6,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import pl.braintelligence.requirement.task.domain.exceptions.ClientException;
 import pl.braintelligence.requirement.task.domain.exceptions.DomainException;
 import pl.braintelligence.requirement.task.domain.exceptions.InvalidEntityException;
 import pl.braintelligence.requirement.task.domain.exceptions.MissingEntityException;
+import pl.braintelligence.requirement.task.domain.exceptions.InvalidAuthorizationException;
 import pl.braintelligence.requirement.task.domain.exceptions.utils.ErrorCode;
 
 import javax.servlet.http.HttpServletRequest;
@@ -18,6 +18,7 @@ import java.lang.invoke.MethodHandles;
 
 import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
 import static org.springframework.http.HttpStatus.NOT_FOUND;
+import static org.springframework.http.HttpStatus.UNAUTHORIZED;
 import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY;
 import static org.springframework.http.ResponseEntity.status;
 
@@ -30,6 +31,12 @@ class ErrorHandler {
     public ResponseEntity<ErrorMessage> handleClientException(ClientException ex, HttpServletRequest request) {
         logger.error(createLog(request, INTERNAL_SERVER_ERROR, ErrorCode.UNEXPECTED_ERROR, ex.getMessage()), ex);
         return handleException(ex, request, INTERNAL_SERVER_ERROR);
+    }
+
+    @ExceptionHandler(InvalidAuthorizationException.class)
+    public ResponseEntity<ErrorMessage> handleClientException(InvalidAuthorizationException ex, HttpServletRequest request) {
+        logger.error(createLog(request, UNAUTHORIZED, ErrorCode.UNEXPECTED_ERROR, ex.getMessage()), ex);
+        return handleException(ex, request, UNAUTHORIZED);
     }
 
     @ExceptionHandler(MissingEntityException.class)

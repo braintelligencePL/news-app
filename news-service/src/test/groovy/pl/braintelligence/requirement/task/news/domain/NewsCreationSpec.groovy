@@ -1,4 +1,4 @@
-package pl.braintelligence.requirement.task.news
+package pl.braintelligence.requirement.task.news.domain
 
 import pl.braintelligence.requirement.task.base.BaseIntegrationSpec
 import pl.braintelligence.requirement.task.news.base.OperatingOnNewsEndpoint
