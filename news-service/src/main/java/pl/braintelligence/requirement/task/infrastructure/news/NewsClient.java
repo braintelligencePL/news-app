@@ -3,6 +3,8 @@ package pl.braintelligence.requirement.task.infrastructure.news;
 import static java.util.Objects.*;
 import static pl.braintelligence.requirement.task.application.utils.DtoMapper.*;
 import static pl.braintelligence.requirement.task.application.utils.DtoMapper.mapToCountry;
+import static pl.braintelligence.requirement.task.domain.exceptions.utils.ErrorCode.API_IS_NOT_AVAILABLE;
+import static pl.braintelligence.requirement.task.domain.exceptions.utils.ErrorCode.RESOURCE_NOT_FOUND;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,12 +12,16 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.lang.invoke.MethodHandles;
 import java.net.URI;
 
+import pl.braintelligence.requirement.task.domain.exceptions.ClientException;
+import pl.braintelligence.requirement.task.domain.exceptions.MissingEntityException;
 import pl.braintelligence.requirement.task.domain.news.News;
 
 @Configuration
@@ -38,7 +44,6 @@ public class NewsClient {
     }
 
     public News getTopHeadlines(String country, String category, String page) {
-        News news = new News(mapToCountry(country), mapToCategory(category));
 
         URI targetUrl = UriComponentsBuilder.fromUriString(topHeadlinesUri)
                 .queryParam("apiKey", apiKey)
@@ -49,30 +54,42 @@ public class NewsClient {
 
         logger.info("Getting top headlines with url={}", targetUrl);
 
-        news.setArticles(
-                requireNonNull(
-                        restTemplate.getForEntity(targetUrl, News.class).getBody())
-                        .getArticles());
+        News news = new News(mapToCountry(country), mapToCategory(category));
+        news.setArticles(fetchNews(targetUrl).getArticles());
 
         return news;
     }
 
     public News getArticlesByQuery(String query) {
-        News news = new News();
-
         URI targetUrl = UriComponentsBuilder.fromUriString(topHeadlinesUri)
                 .queryParam("apiKey", apiKey)
                 .queryParam("q", query)
                 .build().toUri();
 
-        logger.info("Getting news with url={}", targetUrl);
-
-        news.setArticles(
-                requireNonNull(
-                        restTemplate.getForEntity(targetUrl, News.class).getBody())
-                        .getArticles());
+        News news = new News();
+        news.setArticles(fetchNews(targetUrl).getArticles());
 
         return news;
+    }
+
+    private News fetchNews(URI targetUrl) {
+        try {
+            News news = new News();
+
+            logger.info("Fetching news with url={}", targetUrl);
+
+            news.setArticles(
+                    requireNonNull(restTemplate.getForEntity(targetUrl, News.class)
+                            .getBody())
+                            .getArticles());
+
+            return news;
+        } catch (HttpClientErrorException ex) {
+            throw new MissingEntityException("Requested resource not found.", RESOURCE_NOT_FOUND);
+        } catch (RestClientException ex) {
+            logger.error("News API doesn't respond.");
+            throw new ClientException("News API doesn't respond.", API_IS_NOT_AVAILABLE);
+        }
     }
 
 }
