@@ -32,13 +32,21 @@ class NewsAcceptanceSpec extends BaseIntegrationSpec implements OperatingOnNewsE
         given: "prepare stub for news"
         stubNewsApiQueryForArticlesResponse()
 
-        when: "user asks for top-headlines"
-        def response = queryForArticles()
+        when: "user query for 'red' articles"
+        def response = queryForArticles("bitcoin")
 
         then: "verify that system response is correct"
         response.statusCode.is2xxSuccessful()
         response.body.articles.size == 1
-
+        response.body.country == null
+        response.body.category == null
+        response.body.articles[0].date == "2018/10/10"
+        response.body.articles[0].author == "Piotr Bicki"
+        response.body.articles[0].sourceName == "test"
+        response.body.articles[0].title == "Lepiej późno niż wcale..."
+        response.body.articles[0].articleUrl == "https://www.test.html"
+        response.body.articles[0].description == "Bitcoin is here."
+        response.body.articles[0].imageUrl == "https://test.test"
     }
 
 }

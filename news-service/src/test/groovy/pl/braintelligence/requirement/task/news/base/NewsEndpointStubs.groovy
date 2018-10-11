@@ -19,7 +19,7 @@ import static com.github.tomakehurst.wiremock.client.WireMock.urlPathMatching
 class NewsEndpointStubs {
 
     private static final String VALID_URL_TOP_HEADLINES = "/?apiKey=test&category=technology&country=pl&page=1"
-    private static final String VALID_URL_QUERY_FOR_ARTICLES = "/?apiKey=test&q=red"
+    private static final String VALID_URL_QUERY_FOR_ARTICLES = "/?apiKey=test&q=bitcoin"
 
     static StubMapping stubNewsApiTopHeadlinesResponse() {
         return stubFor(get(urlEqualTo(VALID_URL_TOP_HEADLINES))
