@@ -1,6 +1,6 @@
 # News Application
 
-Simple application that works as mediator of external API calls [NewsAPI](https://newsapi.org/docs/endpoints/top-headlines)
+Simple application that works as mediator of external API calls [NewsAPI](https://newsapi.org/docs/endpoints/top-headlines) with obviously beautiful front-end 👌. 
 
 ![](/images/frontend.png)
 
