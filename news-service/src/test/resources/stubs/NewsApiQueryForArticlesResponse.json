@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "totalResults": 1,
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "Eurogamer.pl"
+      },
+      "author": "Piotr Bicki",
+      "title": "Rockstar udostępnił Red Dead Redemption 2 nieuleczalnie choremu graczowi",
+      "description": "Na kilka godzin.",
+      "url": "https://www.eurogamer.pl/articles/2018-10-10-rockstar-udostepnil-red-dead-redemption-2-nieuleczalnie-choremu-graczowi",
+      "urlToImage": "https://d2skuhm0vrry40.cloudfront.net/2018/articles/2018-10-10-17-05/rockstar-udostpni-red-dead-redemption-2-nieuleczalnie-choremu-graczowi-1539187551647.jpg/EG11/thumbnail/1920x1080/format/jpg/2001360.jpg",
+      "publishedAt": "2018-10-10T16:15:00Z",
+      "content": "Deweloperzy ze studia Rockstar umożliwili nieuleczalnie choremu graczowi zapoznanie się z wczesną wersją Red Dead Redemption 2 - kolejnej produkcji firmy osadzonej na Dzikim Zachodzie. Jurian z Holandii cierpi na nerwiakowłókniakowatość typu 2 - chorobę genet… [+1158 chars]"
+    }
+  ]
+}

@@ -18,24 +18,28 @@ import static com.github.tomakehurst.wiremock.client.WireMock.urlPathMatching
 
 class NewsEndpointStubs {
 
-    private static final String VALID_URL = "/?apiKey=test&category=technology&country=pl&page=1"
+    private static final String VALID_URL_TOP_HEADLINES = "/?apiKey=test&category=technology&country=pl&page=1"
+    private static final String VALID_URL_QUERY_FOR_ARTICLES = "/?apiKey=test&q=red"
 
-    static StubMapping stubNewsApiResponse() {
-        return stubFor(get(urlEqualTo(VALID_URL))
+    static StubMapping stubNewsApiTopHeadlinesResponse() {
+        return stubFor(get(urlEqualTo(VALID_URL_TOP_HEADLINES))
                 .willReturn(aResponse()
                 .withStatus(HttpStatus.OK.value())
                 .withHeader(HttpHeaders.CONTENT_TYPE, "application/json")
-                .withBody(getFileContent("stubs/NewsApiResponse.json"))))
+                .withBody(getFileContent("stubs/NewsApiTopHeadlinesResponse.json"))))
+    }
+
+    static StubMapping stubNewsApiQueryForArticlesResponse() {
+        return stubFor(get(urlEqualTo(VALID_URL_QUERY_FOR_ARTICLES))
+                .willReturn(aResponse()
+                .withStatus(HttpStatus.OK.value())
+                .withHeader(HttpHeaders.CONTENT_TYPE, "application/json")
+                .withBody(getFileContent("stubs/NewsApiQueryForArticlesResponse.json"))))
     }
 
     static StubMapping stubNewsApiNotResponding() {
-        return stubFor(get(urlMatching(VALID_URL)).willReturn(aResponse()
+        return stubFor(get(urlMatching(VALID_URL_TOP_HEADLINES)).willReturn(aResponse()
                 .withStatus(HttpStatus.INTERNAL_SERVER_ERROR.value())))
-    }
-
-    static StubMapping stubInvalidNewsApiKey() {
-        return stubFor(get(urlMatching(VALID_URL)).willReturn(aResponse()
-                .withStatus(HttpStatus.UNAUTHORIZED.value())))
     }
 
     static String getFileContent(String filename) throws IOException {

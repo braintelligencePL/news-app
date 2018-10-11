@@ -17,4 +17,13 @@ abstract class BaseIntegrationSpec extends Specification {
     @Rule
     public WireMockRule wireMockRule = new WireMockRule(12346)
 
+    void setupSpec() {
+        fixWireMock()
+    }
+
+    private static void fixWireMock() {
+        System.setProperty('http.keepAlive', 'false')
+        System.setProperty('http.maxConnections', '1')
+    }
+
 }

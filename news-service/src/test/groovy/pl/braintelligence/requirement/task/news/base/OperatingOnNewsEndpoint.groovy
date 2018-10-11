@@ -6,6 +6,10 @@ import pl.braintelligence.requirement.task.base.BaseHttpMethodsSpec
 
 trait OperatingOnNewsEndpoint implements BaseHttpMethodsSpec {
 
+    ResponseEntity queryForArticles() {
+        return get("/news?query=red", NewsDto)
+    }
+
     ResponseEntity getTopHeadlines() {
         return get("/news/pl/technology", NewsDto)
     }

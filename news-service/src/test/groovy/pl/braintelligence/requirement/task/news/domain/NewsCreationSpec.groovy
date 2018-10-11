@@ -4,7 +4,6 @@ import pl.braintelligence.requirement.task.base.BaseIntegrationSpec
 import pl.braintelligence.requirement.task.news.base.OperatingOnNewsEndpoint
 
 import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY
-import static pl.braintelligence.requirement.task.news.base.NewsEndpointStubs.stubNewsApiResponse
 
 class NewsCreationSpec extends BaseIntegrationSpec implements OperatingOnNewsEndpoint {
 
